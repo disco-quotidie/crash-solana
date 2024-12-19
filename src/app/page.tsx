@@ -1,7 +1,10 @@
+import { SolanaWalletProvider } from "./providers/WalletProvider";
+import WalletUI from "./providers/WalletUI";
+
 export default function Home() {
   return (
-    <div>
-      Crash Solana
-    </div>
+    <SolanaWalletProvider>
+      <WalletUI />
+    </SolanaWalletProvider>
   );
 }
